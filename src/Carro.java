@@ -9,14 +9,14 @@
 // + abrirTetoSolar()
 
 
-public class Carro extends Veiculo {
+public class Carro extends VeiculosTerrestre {
     private int numeroPortas;
     private String tipoTransmissao;
     private float capacidadePortaMalas;
 
 
-    public Carro(String modelo, int ano, String cor, boolean ligado, int numeroPortas, String tipoTransmissao, float capacidadePortaMalas){
-        super(modelo, ano, cor, ligado);
+    public Carro(String modelo, int ano, String cor, boolean ligado, int numeroPortas, String tipoTransmissao, float capacidadePortaMalas, int numeroRodas){
+        super(modelo, ano, cor, ligado, numeroRodas);
         this.numeroPortas = numeroPortas;
         this.tipoTransmissao = tipoTransmissao;
         this.capacidadePortaMalas = capacidadePortaMalas;

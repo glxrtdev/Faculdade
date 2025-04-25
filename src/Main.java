@@ -4,24 +4,34 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         
-        Carro carro1 = new Carro("Corsa", 2008, "Preto", false, 2, "Manual", 200);
-        Carro carro2 = new Carro("Celta", 2004, "Branco", false, 2, "Manual", 235);
+        Carro carro1 = new Carro("Corsa", 2008, "Preto", false, 2, "Manual", 200, 4);
+        Carro carro2 = new Carro("Celta", 2004, "Branco", false, 2, "Manual", 235, 4);
 
-        Moto moto1 = new Moto("CG", 2002, "Cinza", false, 150, "Gasolina", "Disco");
-        Moto moto2 = new Moto("XJ6", 2014, "Dourado", false, 600, "Gasolina", "Disco");
+        Moto moto1 = new Moto("CG", 2002, "Cinza", false, 150, "Gasolina", "Disco", 2);
+        Moto moto2 = new Moto("XJ6", 2014, "Dourado", false, 600, "Gasolina", "Disco",2);
 
-        Onibus onibus1 = new Onibus("Marcopolo", 2010,  "Azul", false, 54, 3, 12);
-        Onibus onibus2 = new Onibus("Escolhe essa não",  2018, "Verde", false, 45, 3, 15);
+        Onibus onibus1 = new Onibus("Marcopolo", 2010,  "Azul", false, 54, 3, 12, 8);
+        Onibus onibus2 = new Onibus("Mercedes",  2018, "Verde", false, 45, 3, 15, 8);
 
-        Bicicleta bicicleta1 = new Bicicleta("Caloi", 2021, "Vermelha", false, 18, "Disco", "Urbana");
-        Bicicleta bicicleta2 = new Bicicleta("Sense", 2023, "Preta", false, 24, "Disco", "Montanha");
+        Bicicleta bicicleta1 = new Bicicleta("Caloi", 2021, "Vermelha", false, 18, "Disco", "Urbana", 2);
+        Bicicleta bicicleta2 = new Bicicleta("Sense", 2023, "Preta", false, 24, "Disco", "Montanha", 2);
 
-        
+        Aviao aviao1 = new Aviao("Boing 747", 2001, "Branco", false, 4, 64.4 , "AVGAS");
+        Aviao aviao2 = new Aviao("AirBus A380", 2002, "Azul", false, 4, 79.8 , "AVGAS");
+
+        Helicoptero helicoptero1 = new Helicoptero("BK 117 D-2", 2017, "Preto", false, 2, 3, 1781 );
+        Helicoptero helicoptero2 = new Helicoptero("BK 117 D-3", 2025, "Prata", false, 2, 3, 2000 );
+
+        Submarino submarino1 = new Submarino("K63n", 2005, "Preto", false, 71.4, 11000);
+        Submarino submarino2 = new Submarino("K25n", 2025, "Preto", false, 71.4, 7000);
+
+    //terminar isso aqui 
         System.out.println("Escolha um veículo:");
         System.out.println("1 - Carro");
         System.out.println("2 - Moto");
         System.out.println("3 - Ônibus");
         System.out.println("4 - Bicicleta");
+
         System.out.print("Digite o número da opção desejada: ");
         int escolhaVeiculo = scanner.nextInt();
 

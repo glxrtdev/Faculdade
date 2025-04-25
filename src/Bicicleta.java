@@ -9,13 +9,13 @@
 // + parar()
 
 
-public class Bicicleta extends Veiculo{
+public class Bicicleta extends VeiculosTerrestre{
     private int numeroMarchas;
     private String tipoFreio;
     private String estiloQuadro;
 
-    public Bicicleta(String modelo, int ano, String cor, boolean ligado, int numeroMarchas, String tipoFreio, String estiloQuadro){
-        super(modelo, ano, cor, ligado);
+    public Bicicleta(String modelo, int ano, String cor, boolean ligado, int numeroMarchas, String tipoFreio, String estiloQuadro, int numeroRodas){
+        super(modelo, ano, cor, ligado, numeroRodas);
         this.numeroMarchas = numeroMarchas;
         this.tipoFreio = tipoFreio;
         this.estiloQuadro = estiloQuadro;
