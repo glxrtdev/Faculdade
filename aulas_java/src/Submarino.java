@@ -1,4 +1,9 @@
-public class Submarino extends VeiculosAquatico{
+// - profundidadeMaxima : float
+// + Submarino()
+// + mergulhar() : void
+// + emergir() : void
+
+public class Submarino extends VeiculosAquaticos{
     
     private float profundidadeMaxima;
 
@@ -6,6 +11,18 @@ public class Submarino extends VeiculosAquatico{
         super(modelo, ano, cor, ligado, comprimento);
         this.profundidadeMaxima = profundidadeMaxima;
     }
+    //Getters
+    public float getProfundidadeMaxima(){
+        return profundidadeMaxima;
+    }
+
+    // Mostra exatamente o veículo escolhido
+    @Override
+    public String toString(){
+        return "Modelo: " + getModelo() + ", Ano: " + getAno() + ", Cor: " + getCor();
+    }
+
+    //Funções
     public void mergulhar(){
         System.out.println("O submarino está mergulhando");
     }

@@ -9,7 +9,7 @@
 // + abrirTetoSolar()
 
 
-public class Carro extends VeiculosTerrestre {
+public class Carro extends VeiculosTerrestres {
     private int numeroPortas;
     private String tipoTransmissao;
     private float capacidadePortaMalas;
@@ -47,20 +47,15 @@ public class Carro extends VeiculosTerrestre {
 
     @Override
     public void ligar() {
-        if(!this.ligado){
-            super.ligar();
-        } else {
-            System.out.println("O carro já está ligado");
-        }
+        this.ligado = true;
+           System.out.println("O carro está ligado");
     }
 
     @Override
     public void desligar() {
-        if(this.ligado) {
-            super.desligar();
-        } else {
-            System.out.println("O carro já está desligado");
-        }
+        this.ligado = false;
+            System.out.println("O carro foi desligado");
+        
     }
 
     @Override

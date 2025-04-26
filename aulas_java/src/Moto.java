@@ -9,7 +9,7 @@
 // + ligarPartidaEletrica()
 
 
-public class Moto extends VeiculosTerrestre{
+public class Moto extends VeiculosTerrestres{
     private int cilindradas;
     private String tipoCombustivel;
     private String tipoFreio;
@@ -44,21 +44,16 @@ public class Moto extends VeiculosTerrestre{
     // Funções
     @Override
     public void ligar() {
-        if(!this.ligado){
-            super.ligar();
-        } else {
-            System.out.println("A moto já está ligada");
-        }
+        this.ligado = true;
+        System.out.println("A moto está ligada");
     }
 
     @Override
     public void desligar() {
-        if(this.ligado) {
-            super.desligar();
-        } else {
-            System.out.println("A moto já está desligada");
+        this.ligado = false;
+            System.out.println("A moto foi desligada");
         }
-    }
+    
 
     @Override
     public void acelerar() {

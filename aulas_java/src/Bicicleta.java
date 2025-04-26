@@ -9,7 +9,7 @@
 // + parar()
 
 
-public class Bicicleta extends VeiculosTerrestre{
+public class Bicicleta extends VeiculosTerrestres{
     private int numeroMarchas;
     private String tipoFreio;
     private String estiloQuadro;

@@ -1,4 +1,10 @@
-public class Aviao extends VeiculosAereo{
+// - envergaduraAsa : float
+// - tipoCombustivel : String
+// + Aviao()
+// + decolar() : void
+// + pousar() : void
+
+public class Aviao extends VeiculosAereos{
     private double envergaduraAsa;
     private String tipoCombustivelAviao;
 
@@ -7,6 +13,22 @@ public class Aviao extends VeiculosAereo{
         this.envergaduraAsa = envergaduraAsa;
         this.tipoCombustivelAviao = tipoCombustivelAviao;
     }
+
+    //Getters
+    public double getEnvergaduraAsa(){
+        return envergaduraAsa;
+    }
+    public String getTipoCombustivelAviao(){
+        return tipoCombustivelAviao;
+    }
+
+    // Mostra exatamente o veículo escolhido
+    @Override
+    public String toString(){
+        return "Modelo: " + getModelo() + ", Ano: " + getAno() + ", Cor: " + getCor();
+    }
+
+    // Funções
     public void decolar(){
         System.out.println("O avião está decolando");
     }
@@ -15,10 +37,12 @@ public class Aviao extends VeiculosAereo{
     }
     @Override
     public void ligar(){
+        this.ligado = true;
         System.out.println("O avião está ligando");
     }
     @Override
     public void desligar(){
+        this.ligado = false;
         System.out.println("O avião está desligando");
 
     }

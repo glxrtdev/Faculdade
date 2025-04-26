@@ -9,7 +9,7 @@
 // + anunciarParadaProxima()
 
 
-public class Onibus extends VeiculosTerrestre {
+public class Onibus extends VeiculosTerrestres {
     private int capacidadePassageiros;
     private int portasAcesso;
     private int numeroParadas;
@@ -48,20 +48,14 @@ public class Onibus extends VeiculosTerrestre {
 
     @Override
     public void ligar() {
-        if(!this.ligado){
-            super.ligar();
-        } else {
-            System.out.println("O ônibus já está ligado");
-        }
+        this.ligado = true;
+        System.out.println("O ônibus está ligado");
     }
 
     @Override
     public void desligar() {
-        if(this.ligado) {
-            super.desligar();
-        } else {
-            System.out.println("O ônibus já está desligado");
-        }
+        this.ligado = false;
+        System.out.println("O ônibus foi desligado");
     }
 
     @Override
