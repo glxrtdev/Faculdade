@@ -168,6 +168,15 @@ public class Main {
         } else if (veiculoEscolhido instanceof Bicicleta) {
             System.out.println("6 - Pedalar");
             System.out.println("7 - Parar");
+        } else if (veiculoEscolhido instanceof Aviao) {
+            System.out.println("6 - Decolar");
+            System.out.println("7 - Pousar");
+        } else if (veiculoEscolhido instanceof Helicoptero) {
+            System.out.println("6 - Pairar");
+            System.out.println("7 - Resgatar Pessoas");
+        } else if (veiculoEscolhido instanceof Submarino) {
+            System.out.println("6 - Mergulhar");
+            System.out.println("7 - Emergir");
         }
 
         int opcaoAcao = scanner.nextInt();
@@ -197,6 +206,12 @@ public class Main {
                     ((Onibus) veiculoEscolhido).abrirPortaDianteira();
                 } else if (veiculoEscolhido instanceof Bicicleta) {
                     ((Bicicleta) veiculoEscolhido).pedalar();
+                } else if (veiculoEscolhido instanceof Aviao) {
+                    ((Aviao) veiculoEscolhido).decolar();
+                } else if (veiculoEscolhido instanceof Helicoptero) {
+                    ((Helicoptero) veiculoEscolhido).pairar();
+                } else if (veiculoEscolhido instanceof Submarino) {
+                    ((Submarino) veiculoEscolhido).mergulhar();
                 }
                 break;
             case 7:
@@ -208,13 +223,18 @@ public class Main {
                     ((Onibus) veiculoEscolhido).anunciarParadaProxima();
                 } else if (veiculoEscolhido instanceof Bicicleta) {
                     ((Bicicleta) veiculoEscolhido).parar();
+                } else if (veiculoEscolhido instanceof Aviao) {
+                    ((Aviao) veiculoEscolhido).pousar();
+                } else if (veiculoEscolhido instanceof Helicoptero) {
+                    ((Helicoptero) veiculoEscolhido).resgatarPessoas();
+                } else if (veiculoEscolhido instanceof Submarino) {
+                    ((Submarino) veiculoEscolhido).emergir();
                 }
                 break;
             default:
                 System.out.println("Opção inválida!");
                 break;
         }
-
         scanner.close();
     }
 }
