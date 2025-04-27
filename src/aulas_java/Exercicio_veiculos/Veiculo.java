@@ -67,6 +67,11 @@ public class Veiculo {
     public void frear(){
         
     }
+
+    public String isLigado() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'isLigado'");
+    }
     
 }
 

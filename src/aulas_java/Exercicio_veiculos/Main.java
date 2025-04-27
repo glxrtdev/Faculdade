@@ -36,7 +36,6 @@ public class Main {
         // validação fora do switch
         if (tipoVeiculo < 1 || tipoVeiculo > 3) {
             System.out.println("Opção inválida!");
-            return;
         }
 
         int escolhaVeiculoTerrestre = 0;
@@ -102,7 +101,6 @@ public class Main {
                         break;
                     default:
                         System.out.println("Opção escolhida inválida.");
-                        return;
                 }
                 break;
 
@@ -124,7 +122,6 @@ public class Main {
                         break;
                     default:
                         System.out.println("Opção inválida.");
-                        return;
                 }
                 break;
 
@@ -139,7 +136,6 @@ public class Main {
                         break;
                     default:
                         System.out.println("Opção inválida.");
-                        return;
                 }
                 break;
         }
