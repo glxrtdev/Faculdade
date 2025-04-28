@@ -1,3 +1,5 @@
+package src.aulas_java.Exercicio_veiculos;
+
 // - numeroMarchas: int
 // - tipoFreio: String
 // - estiloQuadro: String

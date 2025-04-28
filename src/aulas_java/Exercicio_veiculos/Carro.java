@@ -1,3 +1,5 @@
+package src.aulas_java.Exercicio_veiculos;
+
 // - numeroPortas: int
 // - tipoTransmissao: String
 // - capacidadePortaMalas: float

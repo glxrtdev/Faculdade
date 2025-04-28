@@ -1,3 +1,5 @@
+package src.aulas_java.Exercicio_veiculos;
+
 // - numeroRodas : int
 // + VeiculoTerrestre()
 

@@ -1,3 +1,5 @@
+package src.aulas_java.Exercicio_veiculos;
+
 // - numeroHelices : int
 // - capacidadeCarga : float
 // + Helicoptero()

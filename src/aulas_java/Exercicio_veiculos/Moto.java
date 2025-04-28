@@ -1,3 +1,5 @@
+package src.aulas_java.Exercicio_veiculos;
+
 // - cilindradas: int
 // - tipoCombustivel: String
 // - tipoFreio: String

@@ -1,3 +1,5 @@
+package src.aulas_java.Exercicio_veiculos;
+
 // - modelo: String
 // - ano: int
 // - cor: String

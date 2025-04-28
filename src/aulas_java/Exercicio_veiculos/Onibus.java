@@ -1,3 +1,5 @@
+package src.aulas_java.Exercicio_veiculos;
+
 // - capacidadePassageiros: int
 // - portasAcesso: int
 // - numeroParadas: int

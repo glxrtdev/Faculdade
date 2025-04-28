@@ -1,3 +1,5 @@
+package src.aulas_java.Exercicio_veiculos;
+
 import java.util.Scanner;
 public class Funcionalidade {
     
