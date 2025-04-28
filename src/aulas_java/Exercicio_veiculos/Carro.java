@@ -50,29 +50,29 @@ public class Carro extends VeiculosTerrestres {
     @Override
     public void ligar() {
         this.ligado = true;
-           System.out.println("O carro está ligado");
+           System.out.println("O carro (" + getModelo() + ") está ligado");
     }
 
     @Override
     public void desligar() {
         this.ligado = false;
-            System.out.println("O carro foi desligado");
+            System.out.println("O carro (" + getModelo() + ") foi desligado");
         
     }
 
     @Override
     public void acelerar() {
-        System.out.println("O carro está acelerando");
+        System.out.println("O carro (" + getModelo() + ") está acelerando");
     }
 
     @Override
     public void frear() {
-        System.out.println("O carro está freando");
+        System.out.println("O carro (" + getModelo() + ") está freando");
     }
 
     @Override
     public void virar(){
-        System.out.println("O carro está virando");
+        System.out.println("O carro (" + getModelo() + ") está virando");
     }
 
     public void ligarFarolNeblina(){

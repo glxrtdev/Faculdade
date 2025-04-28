@@ -51,28 +51,28 @@ public class Onibus extends VeiculosTerrestres {
     @Override
     public void ligar() {
         this.ligado = true;
-        System.out.println("O ônibus está ligado");
+        System.out.println("O ônibus (" + getModelo() + ") está ligado");
     }
 
     @Override
     public void desligar() {
         this.ligado = false;
-        System.out.println("O ônibus foi desligado");
+        System.out.println("O ônibus (" + getModelo() + ") foi desligado");
     }
 
     @Override
     public void acelerar() {
-        System.out.println("O ônibus está acelerando!!");
+        System.out.println("O ônibus (" + getModelo() + ") está acelerando!!");
     }
 
     @Override
     public void frear() {
-        System.out.println("O ônibus está freando");
+        System.out.println("O ônibus (" + getModelo() + ") está freando");
     }
 
     @Override
     public void virar(){
-        System.out.println("O ônibus está virando");
+        System.out.println("O ônibus (" + getModelo() + ") está virando");
     }
 
     public void abrirPortaDianteira(){

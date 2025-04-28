@@ -32,20 +32,20 @@ public class Aviao extends VeiculosAereos{
 
     // Funções
     public void decolar(){
-        System.out.println("O avião está decolando");
+        System.out.println("O avião (" + getModelo() + ") está decolando");
     }
     public void pousar(){
-        System.out.println("O avião está pousando");
+        System.out.println("O avião (" + getModelo() + ") está pousando");
     }
     @Override
     public void ligar(){
         this.ligado = true;
-        System.out.println("O avião está ligando");
+        System.out.println("O avião (" + getModelo() + ") está ligando");
     }
     @Override
     public void desligar(){
         this.ligado = false;
-        System.out.println("O avião está desligando");
+        System.out.println("O avião (" + getModelo() + ") está desligando");
 
     }
 }

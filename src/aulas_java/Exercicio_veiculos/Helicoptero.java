@@ -34,7 +34,7 @@ public class Helicoptero extends VeiculosAereos {
 
     //Funções
     public void pairar(){
-        System.out.println("O helicóptero esta pairando");
+        System.out.println("O helicóptero (" + getModelo() + ") esta pairando");
 
     }
     public void  resgatarPessoas(){
@@ -44,12 +44,12 @@ public class Helicoptero extends VeiculosAereos {
     @Override
     public void ligar(){
         this.ligado = true;
-        System.out.println("O helicóptero está ligando");
+        System.out.println("O helicóptero (" + getModelo() + ") está ligando");
     }
     @Override
     public void desligar(){
         this.ligado = false;
-        System.out.println("O helicóptero está desligando");
+        System.out.println("O helicóptero (" + getModelo() + ") está desligando");
 
     }
 }

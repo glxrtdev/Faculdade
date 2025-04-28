@@ -71,7 +71,7 @@ public class AcoesVeiculos {
                 break;
         }
 
-        Veiculo veiculoEscolhido = null;
+        Veiculos veiculoEscolhido = null;
 
         switch (tipoVeiculo) {
             case 1:

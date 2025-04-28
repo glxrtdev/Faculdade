@@ -47,29 +47,29 @@ public class Moto extends VeiculosTerrestres{
     @Override
     public void ligar() {
         this.ligado = true;
-        System.out.println("A moto está ligada");
+        System.out.println("A moto (" + getModelo() + ") está ligada");
     }
 
     @Override
     public void desligar() {
         this.ligado = false;
-            System.out.println("A moto foi desligada");
+            System.out.println("A moto (" + getModelo() + ") foi desligada");
         }
     
 
     @Override
     public void acelerar() {
-        System.out.println("A moto está acelerando");
+        System.out.println("A moto (" + getModelo() + ") está acelerando");
     }
 
     @Override
     public void frear() {
-        System.out.println("A moto está freando");
+        System.out.println("A moto (" + getModelo() + ") está freando");
     }
 
     @Override
     public void virar(){
-        System.out.println("A moto está virando");
+        System.out.println("A moto (" + getModelo() + ") está virando");
     }
 
     public void ativarModoEsportivo(){

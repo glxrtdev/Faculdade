@@ -26,7 +26,8 @@ public class Main {
             System.out.println("Finalizando o programa!");
         }
        
-            
+
+        scanner.close();    
     }
 
 }

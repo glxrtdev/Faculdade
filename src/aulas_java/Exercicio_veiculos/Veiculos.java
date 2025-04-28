@@ -15,7 +15,7 @@ package src.aulas_java.Exercicio_veiculos;
 // + virar()
 
 
-public class Veiculo {
+public class Veiculos {
     private String modelo;
     private int ano;
     private String cor;
@@ -23,7 +23,7 @@ public class Veiculo {
 
 
     
-    public Veiculo(String modelo, int ano, String cor, boolean ligado){
+    public Veiculos(String modelo, int ano, String cor, boolean ligado){
        this.modelo = modelo;
        this.ano = ano;
        this.cor = cor;
@@ -70,9 +70,8 @@ public class Veiculo {
         
     }
 
-    public String isLigado() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'isLigado'");
+    public boolean isLigado() {
+        return ligado;
     }
     
 }

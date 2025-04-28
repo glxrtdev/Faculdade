@@ -21,7 +21,7 @@ public class CadastroVeiculos {
         return;
     }
 
-     Veiculo veiculoCadastro = null;
+     Veiculos veiculoCadastro = null;
 
     // Declarando variaveis que se repetem
     String modelo = "";
@@ -179,6 +179,7 @@ public class CadastroVeiculos {
         case 2: System.out.println("1 - Avião");
                 System.out.println("2 - Helicóptero");
                 int veiculoAereoCadastro = scanner.nextInt();
+                scanner.nextLine();
 
                 switch (veiculoAereoCadastro) {
                     case 1:
@@ -247,6 +248,7 @@ public class CadastroVeiculos {
         
         case 3: System.out.println("1 - Submarino");
                 int veiculoAquaticoCadastro = scanner.nextInt();
+                scanner.nextLine();
 
                 switch (veiculoAquaticoCadastro) {
                     case 1:
