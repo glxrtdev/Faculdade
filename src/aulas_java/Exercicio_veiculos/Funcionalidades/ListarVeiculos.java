@@ -1,15 +1,17 @@
-package src.aulas_java.Exercicio_veiculos.Funcionalidades;
+// a fazer
 
-import java.util.List;
+// package src.aulas_java.Exercicio_veiculos.Funcionalidades;
 
-import src.aulas_java.Exercicio_veiculos.Veiculo;
+// import java.util.List;
 
-public class ListarVeiculos {
+// import src.aulas_java.Exercicio_veiculos.Veiculo;
+
+// public class ListarVeiculos {
     
 
-    public void listarVeiculos(List<Veiculo> listaDeVeiculos){
-        for (Veiculo veiculo : listaDeVeiculos) {
-            System.out.println("Tipo: " + veiculo.getClass().getSimpleName());
-            }
-}
-}
+//     public void listarVeiculos(List<Veiculo> listaDeVeiculos){
+//         for (Veiculo veiculo : listaDeVeiculos) {
+//             System.out.println("Tipo: " + veiculo.getClass().getSimpleName());
+//             }
+// }
+// }
