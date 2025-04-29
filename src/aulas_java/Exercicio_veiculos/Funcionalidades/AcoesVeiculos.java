@@ -32,6 +32,9 @@ public class AcoesVeiculos {
         Submarino submarino1 = new Submarino("K63n", 2005, "Preto", false, 71.4, 11000);
         Submarino submarino2 = new Submarino("K25n", 2025, "Preto", false, 71.4, 7000);
 
+        Barco barco1 = new Barco("Lancha", 2021, "Branco", false, 4, 6);
+        Barco barco2 = new Barco("Pirata", 1500, "Preto", false, 8, 12);
+
         System.out.println("Escolha o tipo do veículo:");
         System.out.println("1 - Terrestre");
         System.out.println("2 - Aéreo");
@@ -67,6 +70,7 @@ public class AcoesVeiculos {
             case 3:
                 System.out.println("Escolha um veículo aquático:");
                 System.out.println("1 - Submarino");
+                System.out.println("2 - Barco");
                 escolhaVeiculoAquatico = scanner.nextInt();
                 break;
         }
@@ -139,6 +143,11 @@ public class AcoesVeiculos {
                         int submarinoEscolhido = scanner.nextInt();
                         veiculoEscolhido = (submarinoEscolhido == 1) ? submarino1 : submarino2;
                         break;
+                    case 2: System.out.println("Escolha um modelo de barco: ");
+                            System.out.println("1 - " + barco1.getModelo());
+                            System.out.println("2 - " + barco2.getModelo());
+                            int barcoEscolhido = scanner.nextInt();
+                            veiculoEscolhido = (barcoEscolhido == 1) ? barco1 : barco2;
                     default:
                         System.out.println("Opção inválida.");
                 }
@@ -178,6 +187,9 @@ public class AcoesVeiculos {
         } else if (veiculoEscolhido instanceof Submarino) {
             System.out.println("6 - Mergulhar");
             System.out.println("7 - Emergir");
+        } else if (veiculoEscolhido instanceof Barco) {
+            System.out.println("6 - Ancorar");
+            System.out.println("7 - Procurar tesouro");
         }
 
         int opcaoAcao = scanner.nextInt();
@@ -213,6 +225,8 @@ public class AcoesVeiculos {
                     ((Helicoptero) veiculoEscolhido).pairar();
                 } else if (veiculoEscolhido instanceof Submarino) {
                     ((Submarino) veiculoEscolhido).mergulhar();
+                } else if (veiculoEscolhido instanceof Barco) {
+                    ((Barco) veiculoEscolhido).ancorar();
                 }
                 break;
             case 7:
@@ -230,6 +244,8 @@ public class AcoesVeiculos {
                     ((Helicoptero) veiculoEscolhido).resgatarPessoas();
                 } else if (veiculoEscolhido instanceof Submarino) {
                     ((Submarino) veiculoEscolhido).emergir();
+                } else if (veiculoEscolhido instanceof Barco) {
+                    ((Barco) veiculoEscolhido).tesouro();
                 }
                 break;
             default:
