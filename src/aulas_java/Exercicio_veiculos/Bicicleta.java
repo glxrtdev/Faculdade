@@ -44,6 +44,32 @@ public class Bicicleta extends VeiculosTerrestres{
     }
     
     //Funções
+
+    @Override
+    public void ligar(){
+        this.ligado = true;
+        System.out.println("A bicicleta elétrica (" + getModelo() + ") está ligada");
+    }
+    @Override
+    public void desligar(){
+        this.ligado = false;
+        System.out.println("A bicicleta elétrica (" + getModelo() + ") foi desligada");
+
+    }
+    @Override
+    public void acelerar() {
+        System.out.println("A bicicleta elétrica (" + getModelo() + ") está acelerando");
+    }
+
+    @Override
+    public void frear() {
+        System.out.println("A bicicleta elétrica (" + getModelo() + ") está freando");
+    }
+
+    @Override
+    public void virar(){
+        System.out.println("A bicicleta elétrica (" + getModelo() + ") está virando");
+    }
     public void pedalar(){
         System.out.println("Pedaaaala");
     }

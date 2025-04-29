@@ -33,6 +33,31 @@ public class Helicoptero extends VeiculosAereos {
     }
 
     //Funções
+    @Override
+    public void ligar(){
+        this.ligado = true;
+        System.out.println("O helicóptero (" + getModelo() + ") está ligado");
+    }
+    @Override
+    public void desligar(){
+        this.ligado = false;
+        System.out.println("O helicóptero (" + getModelo() + ") foi desligado");
+
+    }
+    @Override
+    public void acelerar() {
+        System.out.println("O helicóptero (" + getModelo() + ") está acelerando");
+    }
+
+    @Override
+    public void frear() {
+        System.out.println("O helicóptero  (" + getModelo() + ") está freando");
+    }
+
+    @Override
+    public void virar(){
+        System.out.println("O helicóptero  (" + getModelo() + ") está virando");
+    }
     public void pairar(){
         System.out.println("O helicóptero (" + getModelo() + ") esta pairando");
 
@@ -41,15 +66,5 @@ public class Helicoptero extends VeiculosAereos {
         System.out.println("Resgate concluído");
     } 
 
-    @Override
-    public void ligar(){
-        this.ligado = true;
-        System.out.println("O helicóptero (" + getModelo() + ") está ligando");
-    }
-    @Override
-    public void desligar(){
-        this.ligado = false;
-        System.out.println("O helicóptero (" + getModelo() + ") está desligando");
-
-    }
+    
 }

@@ -25,19 +25,34 @@ public class Submarino extends VeiculosAquaticos{
     }
 
     //Funções
+    @Override
+    public void ligar(){
+        System.out.println("O submarino (" + getModelo() + ") está ligado");
+    }
+    @Override
+    public void desligar(){
+        System.out.println("O submarino (" + getModelo() + ") foi desligado");
+
+    }
+    @Override
+    public void acelerar() {
+        System.out.println("O submarino (" + getModelo() + ") está acelerando");
+    }
+
+    @Override
+    public void frear() {
+        System.out.println("O submarino (" + getModelo() + ") está freando");
+    }
+
+    @Override
+    public void virar(){
+        System.out.println("O submarino (" + getModelo() + ") está virando");
+    }
     public void mergulhar(){
         System.out.println("O submarino (" + getModelo() + ") está mergulhando");
     }
     public void emergir(){
         System.out.println("O submarino (" + getModelo() + ") está emergindo");
     }
-    @Override
-    public void ligar(){
-        System.out.println("O submarino (" + getModelo() + ") está ligando");
-    }
-    @Override
-    public void desligar(){
-        System.out.println("O submarino (" + getModelo() + ") está desligando");
-
-    }
+    
 }
