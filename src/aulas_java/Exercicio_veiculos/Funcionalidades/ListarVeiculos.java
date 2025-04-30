@@ -11,9 +11,10 @@ public class ListarVeiculos {
         for (Veiculos veiculo : listaDeVeiculos) {
             String tipo = veiculo.getClass().getSimpleName();
             String modelo = veiculo.getModelo(); 
-            String cor = veiculo.getCor();       
+            String cor = veiculo.getCor();     
+            int ano = veiculo.getAno();  
     
-            System.out.println("Tipo: " + tipo + " | Modelo: " + modelo + " | Cor: " + cor);
+            System.out.println("Tipo: " + tipo + " | Modelo: " + modelo + " | Ano: " + ano + " | Cor: " + cor);
         }
 }
 }
