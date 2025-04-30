@@ -8,6 +8,8 @@ public class Main {
     
     public static void main(String[] args) throws Exception {
 
+        
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Qual opção deseja?: ");
@@ -20,6 +22,8 @@ public class Main {
       
         if (opcao == 1) {
             CadastroVeiculos.cadastrarVeiculo();
+        } else if (opcao == 2) {
+            ListarVeiculos.listarVeiculos(AcoesVeiculos.listaVeiculos);
         } else if (opcao == 3) {
             AcoesVeiculos.acoesVeiculos();
         } else if (opcao == 0) {
