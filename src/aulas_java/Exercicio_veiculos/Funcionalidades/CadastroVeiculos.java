@@ -64,6 +64,7 @@ public class CadastroVeiculos {
 
                             System.out.print("Digite a capacidade do porta-malas (em litros): ");
                             float capacidadePortaMalas = scanner.nextFloat();
+                            scanner.nextLine();
 
                             System.out.print("Digite o número de rodas: ");
                             numeroRodas = scanner.nextInt();
@@ -202,6 +203,7 @@ public class CadastroVeiculos {
 
                             System.out.print("Digite a envergadura da asa (em metros): ");
                             double envergaduraAsa = scanner.nextDouble();
+                            scanner.nextLine();
                             
                             System.out.print("Digite o tipo de combustível do avião: ");
                             String tipoCombustivelAviao = scanner.nextLine();
@@ -267,6 +269,7 @@ public class CadastroVeiculos {
                     
                             System.out.print("Digite o comprimento do veículo (em metros): ");
                             double comprimento = scanner.nextDouble();
+                            scanner.nextLine();
                     
                             System.out.print("Digite a profundidade máxima (em metros): ");
                             float profundidadeMaxima = scanner.nextFloat();

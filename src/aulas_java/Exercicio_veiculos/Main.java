@@ -23,6 +23,9 @@ public class Main {
         if (opcao == 1) {
             CadastroVeiculos.cadastrarVeiculo();
         } else if (opcao == 2) {
+            if (AcoesVeiculos.listaVeiculos.isEmpty()) {
+                InstanciadorVeiculos.adicionarVeiculosPadrao(AcoesVeiculos.listaVeiculos);
+            }
             ListarVeiculos.listarVeiculos(AcoesVeiculos.listaVeiculos);
         } else if (opcao == 3) {
             AcoesVeiculos.acoesVeiculos();

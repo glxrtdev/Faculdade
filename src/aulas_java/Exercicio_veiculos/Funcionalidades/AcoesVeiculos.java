@@ -10,50 +10,38 @@ public class AcoesVeiculos {
  
     public static List<Veiculos> listaVeiculos = new ArrayList<>();
 
+    public static Carro carro1, carro2;
+    public static Moto moto1, moto2;
+    public static Onibus onibus1, onibus2;
+    public static Bicicleta bicicleta1, bicicleta2;
+    public static Aviao aviao1, aviao2;
+    public static Helicoptero helicoptero1, helicoptero2;
+    public static Barco barco1, barco2;
+    public static Submarino submarino1, submarino2;
+
     public static void acoesVeiculos(){
 
         Scanner scanner = new Scanner(System.in);
 
-        // Instanciando veículos
-        Carro carro1 = new Carro("Corsa", 2008, "Preto", false, 2, "Manual", 200, 4);
-        listaVeiculos.add(carro1);
-        Carro carro2 = new Carro("Celta", 2004, "Branco", false, 2, "Manual", 235, 4);
-        listaVeiculos.add(carro2);
+        InstanciadorVeiculos.adicionarVeiculosPadrao(listaVeiculos);
 
-        Moto moto1 = new Moto("CG", 2002, "Cinza", false, 150, "Gasolina", "Disco", 2);
-        listaVeiculos.add(moto1);
-        Moto moto2 = new Moto("XJ6", 2014, "Dourado", false, 600, "Gasolina", "Disco", 2);
-        listaVeiculos.add(moto2);
+            carro1 = (Carro) listaVeiculos.get(0);
+            carro2 = (Carro) listaVeiculos.get(1);
+            moto1 = (Moto) listaVeiculos.get(2);
+            moto2 = (Moto) listaVeiculos.get(3);
+            onibus1 = (Onibus) listaVeiculos.get(4);
+            onibus2 = (Onibus) listaVeiculos.get(5);
+            bicicleta1 = (Bicicleta) listaVeiculos.get(6);
+            bicicleta2 = (Bicicleta) listaVeiculos.get(7);
+            aviao1 = (Aviao) listaVeiculos.get(8);
+            aviao2 = (Aviao) listaVeiculos.get(9);
+            helicoptero1 = (Helicoptero) listaVeiculos.get(10);
+            helicoptero2 = (Helicoptero) listaVeiculos.get(11);
+            submarino1 = (Submarino) listaVeiculos.get(12);
+            submarino2 = (Submarino) listaVeiculos.get(13);
+            barco1 = (Barco) listaVeiculos.get(14);
+            barco2 = (Barco) listaVeiculos.get(15);
 
-        Onibus onibus1 = new Onibus("Marcopolo", 2010, "Azul", false, 54, 3, 12, 8);
-        listaVeiculos.add(onibus1);
-        Onibus onibus2 = new Onibus("Mercedes", 2018, "Verde", false, 45, 3, 15, 8);
-        listaVeiculos.add(onibus2);
-
-        Bicicleta bicicleta1 = new Bicicleta("Caloi", 2021, "Vermelha", false, 18, "Disco", "Urbana", 2);
-        listaVeiculos.add(bicicleta1);
-        Bicicleta bicicleta2 = new Bicicleta("Sense", 2023, "Preta", false, 24, "Disco", "Montanha", 2);
-        listaVeiculos.add(bicicleta2);
-
-        Aviao aviao1 = new Aviao("Boing 747", 2001, "Branco", false, 4, 64.4, "AVGAS");
-        listaVeiculos.add(aviao1);
-        Aviao aviao2 = new Aviao("AirBus A380", 2002, "Azul", false, 4, 79.8, "AVGAS");
-        listaVeiculos.add(aviao2);
-
-        Helicoptero helicoptero1 = new Helicoptero("BK 117 D-2", 2017, "Preto", false, 2, 3, 1781);
-        listaVeiculos.add(helicoptero1);
-        Helicoptero helicoptero2 = new Helicoptero("BK 117 D-3", 2025, "Prata", false, 2, 3, 2000);
-        listaVeiculos.add(helicoptero2);
-
-        Submarino submarino1 = new Submarino("K63n", 2005, "Preto", false, 71.4, 11000);
-        listaVeiculos.add(submarino1);
-        Submarino submarino2 = new Submarino("K25n", 2025, "Preto", false, 71.4, 7000);
-        listaVeiculos.add(submarino2);
-
-        Barco barco1 = new Barco("Lancha", 2021, "Branco", false, 4, 6);
-        listaVeiculos.add(barco1);
-        Barco barco2 = new Barco("Pirata", 1500, "Preto", false, 8, 12);
-        listaVeiculos.add(barco2);
 
         System.out.println("Escolha o tipo do veículo:");
         System.out.println("1 - Terrestre");
