@@ -29,6 +29,7 @@ public class CadastroVeiculos {
     String cor = "";
     boolean ligado = false;
     int numeroRodas = 0;
+    double comprimento = 0;
 
     System.out.println("Cadastro de Veículo");
 
@@ -249,6 +250,7 @@ public class CadastroVeiculos {
             break;
         
         case 3: System.out.println("1 - Submarino");
+                System.out.println("2 - Barco");
                 int veiculoAquaticoCadastro = scanner.nextInt();
                 scanner.nextLine();
 
@@ -268,7 +270,7 @@ public class CadastroVeiculos {
                             ligado = scanner.nextBoolean();
                     
                             System.out.print("Digite o comprimento do veículo (em metros): ");
-                            double comprimento = scanner.nextDouble();
+                            comprimento = scanner.nextDouble();
                             scanner.nextLine();
                     
                             System.out.print("Digite a profundidade máxima (em metros): ");
@@ -278,7 +280,28 @@ public class CadastroVeiculos {
                             Submarino submarinoNovo = new Submarino(modelo, ano, cor, ligado, comprimento, profundidadeMaxima);
                             veiculoCadastro = submarinoNovo;
                         break;
-                
+                    case 2: System.out.print("Digite o modelo do veículo: ");
+                            modelo = scanner.nextLine();
+                    
+                            System.out.print("Digite o ano do veículo: ");
+                            ano = scanner.nextInt();
+                            scanner.nextLine();
+                    
+                            System.out.print("Digite a cor do veículo: ");
+                            cor = scanner.nextLine();
+                    
+                            System.out.print("O veículo está ligado? (true/false): ");
+                            ligado = scanner.nextBoolean();
+                    
+                            System.out.print("Digite o comprimento do veículo (em metros): ");
+                            comprimento = scanner.nextDouble();
+                            scanner.nextLine();
+
+                            System.out.println("Digite a quantidade de tripulantes: ");
+                            int tripulantes = scanner.nextInt();   
+                            
+                            Barco barcoNovo = new Barco(modelo, ano, cor, ligado, comprimento, tripulantes);
+                            veiculoCadastro = barcoNovo;
                     default:
                         break;
                 }
@@ -338,6 +361,11 @@ public class CadastroVeiculos {
         Submarino submarino = (Submarino) veiculoCadastro;  //cast
         System.out.println("Comprimento: " + submarino.getComprimento() + " metros");
         System.out.println("Profundidade máxima: " + submarino.getProfundidadeMaxima() + " metros");
+    }
+    else if (veiculoCadastro instanceof Barco) {
+        Barco barco = (Barco) veiculoCadastro; //cast
+        System.out.println("Comprimento: " + barco.getComprimento() + " metros");
+        System.out.println("Quantidade de tripulantes: " + barco.getTripulantes());
     }
 
 
