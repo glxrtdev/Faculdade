@@ -1,7 +1,8 @@
-package src.aulas_java.Exercicio_veiculos.Funcionalidades;
+package aulas_java.Exercicio_veiculos.src.Funcionalidades;
 
-import src.aulas_java.Exercicio_veiculos.*;
 import java.util.List;
+
+import aulas_java.Exercicio_veiculos.src.*;
 
 public class InstanciadorVeiculos {
 
